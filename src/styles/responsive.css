@@ -1,0 +1,487 @@
+@media (min-width: 1500px) {
+  .hero {
+    padding-top: 75px;
+  }
+  .hero-stage {
+    margin-top: 75px;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    width: calc(100% - 48px);
+  }
+  .nav {
+    gap: 21px;
+    font-size: 11px;
+  }
+  .header-inner {
+    height: 76px;
+  }
+  h1 {
+    font-size: 70px;
+  }
+  .hero-stage {
+    margin-top: 50px;
+  }
+  .product-stage {
+    padding: 26px 26px 0;
+  }
+  .benefits {
+    gap: 26px;
+  }
+  .benefits h2 {
+    font-size: 14px;
+  }
+  .benefits p {
+    font-size: 12px;
+  }
+  .section {
+    padding-top: 80px;
+  }
+  h2 {
+    font-size: 38px;
+  }
+  .section-heading > p {
+    font-size: 12px;
+  }
+  .feature-copy {
+    padding: 25px 23px 0;
+  }
+  .feature-card h3 {
+    font-size: 19px;
+  }
+  .feature-card p {
+    font-size: 12px;
+  }
+  .feature-large,
+  .feature-color {
+    height: 415px;
+  }
+  .feature-tags {
+    left: 22px;
+  }
+  .privacy {
+    gap: 35px;
+    padding-block: 70px;
+  }
+  .privacy-art {
+    height: 330px;
+  }
+  .privacy-orbit {
+    width: 250px;
+    height: 250px;
+  }
+  .orbit-two {
+    width: 190px;
+    height: 190px;
+  }
+  .privacy-copy h2 {
+    font-size: 38px;
+  }
+  .installation,
+  .faq-section {
+    gap: 40px;
+  }
+  .demo-section {
+    padding-top: 65px;
+  }
+  .footer-bottom {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 640px) {
+  .container {
+    width: calc(100% - 36px);
+  }
+  .header-inner {
+    height: 70px;
+  }
+  .brand {
+    font-size: 24px;
+  }
+  .brand-mark {
+    width: 32px;
+    height: 32px;
+  }
+  .header .nav {
+    display: none;
+  }
+  .header-actions {
+    gap: 10px;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+  .button-small {
+    min-height: 40px;
+    font-size: 11px;
+    padding-inline: 12px;
+  }
+  .noscript-nav a {
+    padding: 10px;
+    font-size: 13px;
+    color: #c5cddc;
+  }
+  .noscript-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hero {
+    padding-top: 38px;
+  }
+  .release-pill {
+    font-size: 9px;
+    padding: 7px 9px;
+    gap: 8px;
+  }
+  h1 {
+    font-size: 52px;
+    line-height: 1.14;
+    letter-spacing: -2.8px;
+    margin-top: 25px;
+  }
+  .hero-description {
+    font-size: 13px;
+    line-height: 1.9;
+    margin-top: 22px;
+  }
+  .hero-actions {
+    flex-direction: column;
+    gap: 9px;
+    margin-top: 25px;
+  }
+  .hero-actions > .button {
+    font-size: 12px;
+    min-height: 47px;
+    padding-inline: 22px;
+  }
+  .text-button {
+    font-size: 12px;
+  }
+  .hero-meta {
+    font-size: 10px;
+    margin-top: 11px;
+  }
+  .hero-stage {
+    margin-top: 37px;
+    width: calc(100% - 24px);
+  }
+  .stage-topline {
+    font-size: 7px;
+    letter-spacing: 0.7px;
+  }
+  .stage-number {
+    display: none !important;
+  }
+  .product-stage {
+    padding: 15px 13px 0;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  .hero-editor {
+    border-radius: 5px 5px 0 0;
+  }
+  .stage-label {
+    right: 21px;
+    bottom: 8px;
+    font-size: 7px;
+    padding: 5px 7px;
+    gap: 5px;
+  }
+  .stage-label .status-dot {
+    width: 4px;
+    height: 4px;
+  }
+  .stage-bottomline {
+    font-size: 8px;
+    padding: 13px 2px;
+    gap: 10px;
+  }
+  .stage-bottomline > span {
+    gap: 5px;
+  }
+  .benefits {
+    grid-template-columns: 1fr;
+    padding-top: 32px;
+    padding-bottom: 35px;
+    gap: 27px;
+  }
+  .benefits article {
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    column-gap: 14px;
+  }
+  .benefit-icon {
+    grid-row: span 2;
+    margin: 1px 0 0;
+  }
+  .benefits h2 {
+    font-size: 15px;
+    margin-bottom: 7px;
+  }
+  .benefits p {
+    max-width: none;
+    font-size: 12px;
+  }
+  .section {
+    padding-top: 62px;
+  }
+  .section-heading {
+    display: block;
+    margin-bottom: 25px;
+  }
+  .eyebrow {
+    font-size: 8px;
+    letter-spacing: 1.4px;
+    margin-bottom: 14px;
+  }
+  h2 {
+    font-size: 34px;
+    letter-spacing: -1.4px;
+  }
+  .section-heading > p {
+    margin-top: 18px;
+    font-size: 12px;
+    line-height: 1.8;
+  }
+  .desktop-break {
+    display: none;
+  }
+  .feature-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .feature-card {
+    border-radius: 10px;
+  }
+  .feature-copy {
+    padding: 25px 24px 0;
+  }
+  .feature-number {
+    font-size: 8px;
+    margin-bottom: 13px;
+  }
+  .feature-card h3 {
+    font-size: 20px;
+  }
+  .feature-card p {
+    font-size: 12px;
+  }
+  .feature-large {
+    height: 405px;
+  }
+  .feature-color {
+    height: 390px;
+  }
+  .annotation-visual {
+    margin-top: 30px;
+  }
+  .feature-color .color-visual {
+    bottom: -28px;
+    width: 220px;
+    left: calc(50% - 110px);
+  }
+  .feature-shortcuts,
+  .feature-export {
+    min-height: 280px;
+  }
+  .feature-tags {
+    left: 24px;
+  }
+  .keyboard {
+    margin-top: 28px;
+  }
+  .demo-section {
+    margin-top: 60px;
+    padding-top: 45px;
+    padding-bottom: 39px;
+  }
+  .video-frame {
+    border-radius: 8px;
+  }
+  .play-button > span {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 12px;
+    box-shadow: 0 0 0 6px #15294f66;
+  }
+  .play-button > span svg {
+    width: 20px;
+  }
+  .play-button strong {
+    font-size: 11px;
+  }
+  .play-button small {
+    font-size: 9px;
+    margin-top: 5px;
+  }
+  .demo-caption {
+    font-size: 8px;
+    line-height: 1.8;
+    gap: 10px;
+  }
+  .demo-caption > span:last-child {
+    display: none;
+  }
+  .demo-transcript {
+    font-size: 11px;
+    line-height: 1.85;
+    margin-top: 15px;
+  }
+  .quick-demo > summary {
+    font-size: 11px;
+    justify-content: space-between;
+  }
+  .privacy {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding-block: 45px 55px;
+  }
+  .privacy-art {
+    height: 265px;
+    order: 2;
+  }
+  .privacy-copy h2 {
+    font-size: 34px;
+  }
+  .privacy-copy > p:not(.eyebrow) {
+    font-size: 12px;
+  }
+  .privacy-orbit {
+    width: 230px;
+    height: 230px;
+  }
+  .orbit-two {
+    width: 175px;
+    height: 175px;
+  }
+  .privacy-shield {
+    width: 94px;
+    height: 94px;
+    border-radius: 22px;
+  }
+  .privacy-shield svg {
+    width: 40px;
+  }
+  .local-tag {
+    bottom: 3px;
+    font-size: 7px;
+  }
+  .download-header h2 {
+    font-size: 39px;
+    letter-spacing: -1.7px;
+  }
+  .download-header > p:last-child {
+    font-size: 12px;
+  }
+  .downloads {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 28px;
+  }
+  .download-card {
+    padding: 25px;
+  }
+  .download-card-top {
+    margin-bottom: 19px;
+  }
+  .download-card h3 {
+    font-size: 23px;
+  }
+  .download-card > .button {
+    min-height: 46px;
+  }
+  .download-meta {
+    font-size: 10px;
+  }
+  .download-footnote {
+    font-size: 10px;
+    text-align: left;
+  }
+  .download-footnote a {
+    margin-left: 0;
+  }
+  .installation {
+    grid-template-columns: 1fr;
+    gap: 26px;
+    margin-top: 36px;
+    padding-top: 28px;
+  }
+  .installation h3 {
+    font-size: 23px;
+  }
+  .installation ol {
+    gap: 22px;
+  }
+  .installation li p {
+    font-size: 11px;
+  }
+  .installation strong {
+    font-size: 12px;
+  }
+  .faq-section {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    margin-top: 0;
+  }
+  .faq-section > div > p:not(.eyebrow) {
+    margin-top: 16px;
+  }
+  .faq-list summary {
+    font-size: 12px;
+    padding-block: 20px;
+    line-height: 1.65;
+  }
+  .faq-list details > p {
+    font-size: 12px;
+  }
+  .final-cta {
+    padding-block: 70px 65px;
+  }
+  .final-cta h2 {
+    font-size: 39px;
+  }
+  .final-cta > .brand-mark {
+    margin-bottom: 21px;
+  }
+  .footer-main {
+    padding-block: 23px;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .footer-main p {
+    font-size: 9px;
+  }
+  .footer-github {
+    font-size: 10px;
+    gap: 7px;
+  }
+  .footer-bottom {
+    display: block;
+    padding: 19px 0 24px;
+    font-size: 9px;
+  }
+  .footer-bottom > a {
+    margin-top: 10px;
+  }
+  .footer-bottom > span:last-child {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *:before,
+  *:after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+  .play-button:hover > span,
+  .button:hover {
+    transform: none;
+  }
+}
