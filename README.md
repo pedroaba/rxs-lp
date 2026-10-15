@@ -1,74 +1,57 @@
-# RSX landing page
+# RSX
 
-A Portuguese landing page for RSX, the native macOS screenshot and annotation app. Built with Vite, React, TypeScript, Tailwind CSS and shadcn/ui. Source code, comments and developer documentation are written in English; public product copy is in Portuguese.
+### Mostre o que você quer dizer.
 
-## Getting started
+Uma boa captura vale mais que uma longa explicação. O **RSX** é um aplicativo de capturas de tela e anotações para macOS: capture, destaque o que importa e compartilhe uma imagem que deixa sua ideia clara.
 
-Use Node.js 22.12+ and pnpm 11.25.0 (declared in `packageManager`).
+**Gratuito · Código aberto · macOS 13+**
 
-```sh
-pnpm install --frozen-lockfile
-pnpm dev
-```
+[Baixar para macOS](https://github.com/pedroaba/rxs/releases) · [Conhecer o aplicativo](https://github.com/pedroaba/rxs) · [Enviar uma sugestão](https://github.com/pedroaba/rxs/issues)
 
-## Commands
+![Editor do RSX com ferramentas de anotação, cópia e exportação em PNG](public/media/hero-editor.webp)
 
-```sh
-pnpm check          # TypeScript verification
-pnpm format:check   # Formatting verification
-pnpm build          # Static preview build; noindex without SITE_URL
-pnpm preview        # Serve dist locally on port 4173
-pnpm test           # Desktop and mobile browser integration tests
-pnpm lighthouse          # Lighthouse against the local preview
-pnpm media          # Rebuild images and videos; requires FFmpeg and Chromium
-```
+## Menos explicação. Mais clareza.
 
-Install the test browser once with `pnpm exec playwright install chromium`. The generated media are committed as project assets, so ordinary development and builds do not require FFmpeg or image generation access.
+Um ajuste no layout. Um detalhe que passou despercebido. Uma ideia que precisa sair da sua tela e chegar a outra pessoa.
 
-## Architecture
+Com o RSX, você pode mostrar exatamente o que quer dizer:
 
-```text
-src/
-  App.tsx                       Page composition only
-  components/
-    ui/                         shadcn/ui primitives
-    layout/                     Site header and footer
-    media/                      On-demand video player and playback fallback
-    brand.tsx                   Shared product identity
-    icon.tsx                    Product icon set
-  features/landing/components/   Landing sections, download cards and installation steps
-  config/product.ts             Verified release, compatibility and download configuration
-  content/faq.ts                 Public FAQ copy
-  lib/utils.ts                  Shared class-name utility
-  styles/                       Theme, base, layout, landing and responsive styles
-scripts/                        Static HTML, production validation and media generation
-tests/                          User-facing browser integration tests
-assets/source/                  Original screenshots and generated background
-public/media/                   Optimized website assets
-```
+- **Capture o que importa.** Escolha a tela inteira, uma região ou uma janela.
+- **Direcione o olhar.** Use setas, retângulos e desenho livre para destacar informações.
+- **Cuide dos detalhes.** Ajuste cores, opacidade e espessura dos traços, com seus tons favoritos sempre à mão.
+- **Mantenha o ritmo.** Configure atalhos globais e use desfazer e refazer durante a edição.
+- **Compartilhe com clareza.** Copie ou salve em PNG, preservando a resolução original da imagem.
 
-shadcn/ui is configured through `components.json` and the `@/` import alias. Button, Badge, Card and Sheet are generated from the official registry and customized locally. Native HTML disclosures are used for the FAQ to keep it fully operable without JavaScript. The mobile Sheet supplies focus management, Escape dismissal and keyboard navigation.
+## Na sua tela. No seu Mac.
 
-## Static HTML and production SEO
+A captura, a edição e a exportação acontecem no seu dispositivo. O RSX não envia suas capturas para servidores e não tem upload ou sincronização.
 
-`pnpm build` produces the Vite bundle and then prerenders the same React tree into `dist/index.html`. React hydrates that HTML in the browser. Product descriptions, FAQs and actual download links are present before JavaScript runs. Videos request their sources only after playback is requested.
+É um aplicativo nativo para macOS, disponível pela barra de menus, com código aberto para você conhecer e acompanhar.
 
-Copy `.env.example` to `.env` and set `SITE_URL` to the final public HTTPS origin. Then run:
+## Veja o RSX em ação
 
-```sh
-pnpm build:production
-```
+[![Assistir à demonstração do RSX](public/media/rsx-demo-poster.webp)](https://github.com/pedroaba/rxs-lp/blob/main/public/media/rsx-demo.mp4)
 
-This command rejects a missing or invalid public origin. It generates the canonical address, absolute social image URLs, `SoftwareApplication` structured data, `robots.txt` and `sitemap.xml`. Without a configured origin, preview builds deliberately use `noindex, nofollow` and block crawling. No placeholder domain is shipped as the production address. Deployment and Search Console registration are separate steps.
+[Assistir à demonstração de 25 segundos](https://github.com/pedroaba/rxs-lp/blob/main/public/media/rsx-demo.mp4) · [Ver a versão rápida de 8 segundos](https://github.com/pedroaba/rxs-lp/blob/main/public/media/rsx-short.mp4)
 
-## Releases and installation
+As demonstrações são animações feitas com imagens reais do editor. O aplicativo não oferece gravação de vídeo ou GIF.
 
-`src/config/product.ts` contains GitHub assets verified on October 15, 2026. Version 0.3.0 supplies ZIP files for Apple Silicon and Intel with SHA-256 files. Its archives and bundled application still use **RXS**, while the current product brand is **RSX**. The page explains this distinction and the release's ad-hoc signature and lack of Apple notarization. Only update download configuration after confirming the new public assets.
+## Comece com o RSX
 
-## Visual assets
+Escolha o arquivo correspondente ao seu Mac na [página de downloads](https://github.com/pedroaba/rxs/releases): **Apple Silicon** ou **Intel**. O requisito mínimo é **macOS 13 ou posterior**.
 
-See `assets/README.md` for source attribution, generation prompt and reproduction details. The videos are animated demonstrations assembled from actual editor images, not recordings of a capture flow or a feature offered by the app. They contain no audio and include Portuguese WebVTT captions and a textual explanation on the page.
+Descompacte o ZIP, mova o aplicativo para **Aplicativos** e autorize a **Gravação de Tela** quando solicitado. Depois, configure seus atalhos pela barra de menus.
 
-## Verification
+Na versão pública 0.3.0, os arquivos e o aplicativo ainda usam o nome **RXS**. Os pacotes não possuem notarização da Apple; se o macOS bloquear a primeira abertura e você confiar na origem do download, siga as orientações nas [notas da versão](https://github.com/pedroaba/rxs/releases/tag/v0.3.0).
 
-The browser suite covers static HTML with JavaScript disabled, published download URLs, FAQ interactions, mobile navigation, on-demand media requests, actual playback and duration, failed playback fallback, keyboard access and reduced motion. Lighthouse reports and desktop/mobile screenshots are written to `output/qa/` and excluded from version control.
+## Sobre esta página
+
+Este repositório reúne a landing page do RSX, suas imagens e demonstrações. O desenvolvimento do aplicativo acontece no [repositório do RSX](https://github.com/pedroaba/rxs).
+
+Para contribuir com o site, consulte o [guia de desenvolvimento](docs/development.md).
+
+---
+
+**Capture. Anote. Compartilhe.**
+
+Um projeto de [Pedro Barbosa](https://github.com/pedroaba).
